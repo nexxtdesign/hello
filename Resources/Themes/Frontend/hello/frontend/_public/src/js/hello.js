@@ -36,5 +36,5 @@ $(".backToTop").click(function() {
 
 
 
-console.log(this + 'init')
+//console.log(this + 'init')
 })(jQuery, window);
