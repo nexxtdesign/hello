@@ -1,0 +1,49 @@
+@font-face {
+  font-family: @hello-icon-fontname;
+  src:url('@{font-directory}/hello.eot?@{shopware-revision}');
+  src:url('@{font-directory}/hello.eot?#@{shopware-revision}') format('embedded-opentype'),
+  url('@{font-directory}/hello.woff?@{shopware-revision}') format('woff'),
+  url('@{font-directory}/hello.ttf?@{shopware-revision}') format('truetype'),
+  url('@{font-directory}/hello.svg?@{shopware-revision}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon--"], [class*=" icon--"] {
+  font-family: @hello-icon-fontname, @sw-icon-fontname;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--cross:before {
+  content: @hello-icon-cross;
+}
+.icon--account:before {
+  content: @hello-icon-account;
+}
+.icon--basket:before {
+  content: @hello-icon-basket;
+}
+.icon--mail:before {
+  content: @hello-icon-mail;
+}
+.icon--notepad:before {
+  content: @hello-icon-notepad;
+}
+.icon--heart:before {
+  content: @hello-icon-heart;
+}
+.icon--search:before {
+  content: @hello-icon-search;
+}
+.icon--menu:before {
+  content: @hello-icon-menu;
+}

@@ -1,0 +1,20 @@
+.backToTop {
+    position: fixed;
+    right: 0;
+    .unitize(bottom, -120);
+    opacity: 0;
+    background: @brand-primary;
+    .unitize(padding, 20);
+    .unitize(font-size, 20);
+    transition: all ease-in-out 0.25s;
+}
+.backToTop.visible {
+    .unitize(bottom, 0);
+    opacity: 1;
+	transition: all ease-in-out 0.25s;
+}
+.backToTop:hover {
+	color:@text-color;
+    background: @brand-primary-dark;
+
+}

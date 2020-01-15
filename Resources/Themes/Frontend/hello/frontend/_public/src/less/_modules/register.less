@@ -1,0 +1,55 @@
+.register--login {
+  .register--existing-customer {
+    background: @gray;
+    .unitize-padding(10, 20);
+  }
+}
+
+.register--content {
+  .register--form {
+    .unitize-padding(10, 20);
+  }
+}
+.steps--content {
+
+  border: 0 none;
+
+  .steps--list {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .steps--entry {
+    font-family: @custom-theme-font-headline;
+    text-align: center;
+    display: block;
+    width: 33.33%;
+    float: left;
+
+    .icon {
+      display: block;
+      margin: 0 auto;
+      font-weight: normal;
+      background: transparent;
+      .border-radius(0);
+      color: @brand-secondary;
+    }
+    .text {
+      font-weight: normal;
+      height: auto;
+      text-align: center;
+      margin: 0;
+    }
+
+    &.is--active {
+      .icon {
+        color: @brand-primary;
+      }
+      .text--inner {
+        border-bottom: 1px solid;
+      }
+    }
+  }
+}
+
+

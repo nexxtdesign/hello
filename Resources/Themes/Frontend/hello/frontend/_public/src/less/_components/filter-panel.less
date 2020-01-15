@@ -1,0 +1,28 @@
+.filter-panel {
+  background: transparent;
+  border-color: @border-color;
+
+  .filter-panel--icon {
+    .unitize(font-size, 6);
+    .unitize(top, 12);
+
+    &:before {
+      content: @sw-icon-arrow-down;
+    }
+  }
+  &.is--collapsed {
+    .filter-panel--icon {
+      &:before {
+        content: @sw-icon-arrow-up;
+      }
+    }
+  }
+}
+
+.filter-panel--flyout {
+  .border-radius(0);
+}
+
+.filter--active {
+  .border-radius(0);
+}

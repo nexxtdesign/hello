@@ -1,0 +1,20 @@
+.content--breadcrumb {
+  .unitize-padding(0, 10);
+  border: 0;
+
+  .breadcrumb--link, .breadcrumb--separator {
+      .unitize(padding-left, 0);
+  }
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+    .content--breadcrumb {
+      .unitize-padding(0, 50);
+    }
+}
+
+@media screen and(min-width: @desktopViewportWidth) {
+    .content--breadcrumb  {
+      .unitize-padding(0, 0);
+    }
+}

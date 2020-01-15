@@ -1,0 +1,56 @@
+@font-base-stack: @custom-theme-font-base;
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: @font-base-stack;
+  font-weight: @font-base-weight;
+  background: #fff;
+  .unitize(letter-spacing, .5);
+}
+
+.content-main {
+  .box-shadow(none);
+}
+
+.content-main--inner {
+  .unitize-padding(0,10,10,10);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @custom-theme-font-headline;
+  font-weight: @font-bold-weight;
+}
+
+p {
+  .unitize(line-height, 26);
+}
+
+a {
+  .transition(.3s);
+}
+
+// Tablet
+@media screen and (min-width: @tabletViewportWidth) {
+  .content-main {
+    .unitize(margin-top, 0);
+  }
+}
+
+// Tablet
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+  .content-main--inner {
+    .unitize-padding(0,50,50,50);
+  }
+}
+
+// Desktop
+@media screen and (min-width: @desktopViewportWidth) {
+  .content-main--inner {
+    .unitize-padding(0,0,50,0);
+  }
+}

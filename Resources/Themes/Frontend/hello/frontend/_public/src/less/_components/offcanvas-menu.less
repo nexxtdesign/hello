@@ -1,0 +1,41 @@
+.navigation--headline {
+  font-family: @custom-theme-font-headline;
+  color: @text-color-dark;
+  font-weight: @font-bold-weight;
+  .unitize(font-size, @font-size-base);
+  .unitize-margin(16, 20, 5, 20);
+}
+
+.off-canvas {
+  .transition(all 0.45s cubic-bezier(0.3, 0, 0.47, 1.35));
+
+  .close--off-canvas {
+    .unitize-padding(5, 10);
+    font-family: @custom-theme-font-btn;
+    background: @gray;
+    color: @brand-secondary;
+    font-weight: @font-base-weight;
+  }
+}
+.navigation--smartphone {
+  .entry--close-off-canvas {
+    .unitize-padding(5, 10);
+    font-family: @custom-theme-font-btn;
+    background: @btn-secondary-bg;
+    color: @btn-secondary-text-color;
+
+    .navigation--link {
+      color: @btn-secondary-text-color;
+      font-weight: @font-base-weight;
+      &:hover {
+        color: @btn-secondary-text-color;
+      }
+    }
+
+    &:hover {
+      color: @btn-secondary-hover-text-color;
+      background: @btn-secondary-hover-bg;
+    }
+
+  }
+}

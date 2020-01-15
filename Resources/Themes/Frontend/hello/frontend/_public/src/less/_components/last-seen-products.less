@@ -1,0 +1,18 @@
+.last-seen-products {
+  .unitize-padding(15, 20);
+  text-align: center;
+  border: 1px solid @gray;
+
+    .last-seen-products--title {
+      font-weight: @font-bold-weight;
+      font-family: @custom-theme-font-headline;
+      border: 0 none;
+    }
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+  .last-seen-products {
+    .unitize-margin(30, 0, 0, 0);
+    .unitize-padding(30, 40);
+  }
+}

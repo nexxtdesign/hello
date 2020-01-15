@@ -1,0 +1,35 @@
+.off-canvas .sidebar--navigation .navigation--link {
+  .unitize(line-height, 21);
+  .unitize-padding(10, 20);
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+  .sidebar-main {
+    .unitize-width(230);
+  }
+  .sidebar--navigation {
+    background: transparent;
+    border: 0;
+    .navigation--entry {
+      border: 0 none;
+    }
+    .navigation--link {
+      &.is--active {
+        font-weight: normal;
+      }
+    }
+  }
+  .shop-sites--container {
+    .shop-sites--headline {
+      font-weight: @font-base-weight;
+      .unitize(margin-left, 10);
+      .unitize(margin-right, 10);
+    }
+  }
+
+  .off-canvas .sidebar--navigation .navigation--link {
+    .unitize(line-height, 21);
+    .unitize-padding(6, 20);
+  }
+
+}

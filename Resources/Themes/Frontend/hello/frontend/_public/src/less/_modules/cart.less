@@ -1,0 +1,53 @@
+.product--table {
+  .add-product--field,
+  .add-voucher--field {
+    .border-radius(0);
+  }
+  .add-product--button {
+    border: 0 none;
+    .border-radius(0);
+    .unitize(margin-left, 10);
+  }
+  .table--media {
+    .table--media-outer {
+      .border-radius(0);
+      border: 0 none;
+    }
+  }
+}
+
+.cart--usp {
+  .unitize-padding(20, 10);
+
+  .usp--inner {
+    background: @gray;
+    .unitize-padding(40, 30);
+
+    .usp--header h3 {
+      margin-top: 0;
+    }
+    .usp--item {
+      .unitize-padding(5, 0);
+    }
+  }
+}
+
+// Tablet view
+@media screen and(min-width: @tabletViewportWidth) {
+  .product--table {
+    .panel--body {
+      border: 0 none;
+    }
+    .basket--footer {
+      border: 0 none;
+      background: @gray;
+    }
+  }
+  .content--confirm {
+    .confirm--inner-container {
+      .basket--footer, .has--border {
+        border: 0;
+      }
+    }
+  }
+}

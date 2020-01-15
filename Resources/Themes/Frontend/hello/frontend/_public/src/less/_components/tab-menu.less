@@ -1,0 +1,37 @@
+.js--tab-menu {
+  .tab--container-list {
+    .tab--container {
+      border: 0;
+    }
+  }
+  .tab--link {
+    border: 0 none;
+    background: transparent;
+    .unitize-padding(10, 0);
+    .unitize-margin(0, 20, 0, 0);
+    &:hover {
+      background: transparent;
+    }
+    &.is--active {
+      border-bottom: 1px solid @brand-secondary;
+      background: transparent;
+    }
+  }
+}
+.product--details {
+  .content--title {
+    .unitize-margin(10, 0, 20, 0);
+    font-weight: @font-bold-weight;
+    font-family: @custom-theme-font-headline;
+  }
+}
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+  .product--details {
+    .content--description,
+    .content--product-reviews {
+      .unitize-padding(30, 0);
+    }
+  }
+}

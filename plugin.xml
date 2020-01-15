@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label>nexxtDesign Responsive Theme</label>
+    <label lang="de">nexxtDesign Responsive Theme</label>
+    <version>1.0.2</version>
+    <copyright>(c) by nexxtdesign.de</copyright>
+    <license>proprietary</license>
+    <link>https://nexxtdesign.de</link>
+    <author>nexxtdesign</author>
+    <compatibility minVersion="5.2.0" />
+    <changelog version="1.0.0">
+        <changes>
+            <![CDATA[
+            First release Shopware Community Store
+            ]]>
+        </changes>
+        <changes lang="de">
+            <![CDATA[
+            Erstveröffentlichung Shopware Community Store
+            ]]>
+        </changes>
+    </changelog>
+    <changelog version="1.0.1">
+        <changes>
+            <![CDATA[
+            Translation of the advantage bar is now possible via the text modules
+            ]]>
+        </changes>
+        <changes lang="de">
+            <![CDATA[
+            Übersetzung der Vorteilsleiste jetzt über die Textbausteine möglich
+            ]]>
+        </changes>
+    </changelog>
+    <changelog version="1.0.2">
+        <changes>
+            <![CDATA[
+            Account Off Canvas overlay fix
+            ]]>
+        </changes>
+        <changes lang="de">
+            <![CDATA[
+            Account Off Canvas overlay fix
+            ]]>
+        </changes>
+    </changelog>
+    <description>
+        <![CDATA[
+       <b>My Plugin</b>
+       <p>Your universal Allround-Shopware-Theme. More infos: <a href="https://nexxtdesign.de">nexxtdesign</a></p>
+       ]]>
+    </description>
+    <description lang="de">
+        <![CDATA[
+       <b>Mein Plugin</b>
+       <p>Dein indivualisierbares Allround-Shopware-Theme. Mehr Infos im <a href="https://nexxtdesign.de">nexxtdesign</a></p>
+       ]]>
+    </description>
+</plugin>

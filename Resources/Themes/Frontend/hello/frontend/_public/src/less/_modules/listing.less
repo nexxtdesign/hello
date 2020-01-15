@@ -1,0 +1,121 @@
+.hero--headline-section {
+  background: @gray-light;
+  text-align: center;
+  .unitize-padding(10, 0, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid @border-color;
+  position: relative;
+  width: 100%;
+
+  .container {
+    z-index: 20;
+  }
+
+  &.has--background-img {
+    .hero--headline {
+      color: #fff;
+    }
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: fade(@brand-secondary-dark, 20%);
+      z-index: 10;
+    }
+  }
+}
+// Filter options
+.action--filter-options {
+  .filter--close-btn {
+    background: @btn-secondary-bg;
+    color: #fff;
+    font-weight: @font-base-weight;
+
+    &:hover {
+      background: @btn-secondary-hover-bg;
+      color: #fff;
+    }
+
+    .icon--arrow-right {
+      .unitize-margin(3, 0, 0, 0);
+      float: right;
+    }
+  }
+}
+// Tablet view
+@media screen and(min-width: @tabletViewportWidth) {
+  .action--filter-btn {
+    .filter--trigger {
+      &:before,
+      &:after {
+        .unitize(font-size, 6);
+        content: @sw-icon-arrow-down;
+      }
+      &:after {
+        content: @sw-icon-arrow-up;
+      }
+    }
+  }
+
+  .listing--actions {
+    border: 0;
+    background: transparent;
+
+    .listing--paging {
+      border: 0 none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .listing--bottom-paging {
+    padding-left: 0;
+    padding-right: 0;
+    border: 0 none;
+    background: transparent;
+  }
+
+  .action--per-page {
+    .per-page--label{
+      font-weight: normal;
+    }
+  }
+  .sidebar--categories-navigation {
+    >.categories--navigation {
+      .unitize-padding(20, 0);
+    }
+  }
+
+  .hero--headline-section {
+    .unitize-padding(20, 0, 40);
+    &.has--background-img {
+      .unitize-padding(40, 0, 60);
+    }
+  }
+
+}
+
+    // Desktop view
+@media screen and(min-width: @desktopViewportWidth) {
+  .action--filter-options.is--collapsed,
+  .action--filter-options.is--active-filter {
+    border: 0 none;
+  }
+
+  .action--filter-btn {
+    margin-left: 0;
+  }
+  .action--sort {
+    margin-right: 0;
+  }
+}

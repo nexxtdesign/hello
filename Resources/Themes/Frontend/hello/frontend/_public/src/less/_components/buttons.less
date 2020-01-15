@@ -1,0 +1,81 @@
+@btn-default-bg: #FFFFFF;
+@btn-default-hover-bg: #FFFFFF;
+
+@btn-default-text-color: @text-color-dark;
+@btn-default-hover-text-color: @brand-primary;
+
+@btn-default-border-color: @brand-secondary;
+@btn-default-hover-border-color: @brand-primary;
+
+@btn-primary-bg: @brand-primary;
+@btn-primary-hover-bg: @brand-primary-dark;
+
+@btn-primary-text-color: #FFFFFF;
+@btn-primary-hover-text-color: @btn-primary-text-color;
+
+@btn-secondary-bg: @brand-secondary;
+@btn-secondary-hover-bg: @brand-secondary-dark;
+
+@btn-secondary-text-color: #FFFFFF;
+@btn-secondary-hover-text-color: @btn-secondary-text-color;
+
+
+.btn {
+    .border-radius(0);
+    background: transparent;
+    font-weight: @font-bold-weight;
+    color: @btn-default-text-color;
+    .transition(.3s);
+
+    &:disabled,
+    &:disabled:hover,
+    &.is--disabled,
+    &.is--disabled:hover {
+        background: @btn-default-bg;
+    }
+
+    &:hover {
+        background: transparent;
+        color: @btn-default-hover-text-color;
+        border-color: @btn-default-hover-border-color;
+    }
+}
+
+.is--primary {
+    border: 0 none;
+    background: @btn-primary-bg;
+    color: @btn-primary-text-color;
+
+    &:hover {
+        background: @btn-primary-hover-bg;
+        color: @btn-primary-hover-text-color;
+        border: 0 none;
+    }
+
+}
+
+.is--secondary {
+    background: @btn-secondary-bg;
+    color: @btn-secondary-text-color;
+
+    &:hover {
+        background: @btn-secondary-hover-bg;
+        color: @btn-secondary-hover-text-color;
+        border: 0 none;
+    }
+
+}
+
+.is--link {
+    .unitize-padding(2, 12);
+    .unitize(line-height, 34);
+
+    border: 0 none;
+    background: transparent;
+    color: @brand-secondary;
+
+    &:hover {
+        color: @brand-primary;
+        background: transparent;
+    }
+}

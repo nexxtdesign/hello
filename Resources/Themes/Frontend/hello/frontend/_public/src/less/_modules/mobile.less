@@ -1,0 +1,64 @@
+//PHONE
+@media screen and (max-width: @phoneLandscapeViewportWidth) {
+.header-main {
+	background: @brand-primary;
+	padding:8px;
+		.logo-main {position: absolute;margin-left: 40px;top: -10px;z-index: 500
+		}
+	}
+}
+
+//TABLET
+@media screen and (max-width: @tabletViewportWidth) {
+
+}
+
+//DESKTOP
+@media screen and (min-width: @desktopViewportWidth) {
+
+
+.header-main {
+  border: 0 none;
+  margin: 0 auto;
+
+  .logo-main {
+    .unitize-padding(10, 10);
+
+    .logo--link {
+      .unitize-height(60);
+      .unitize-padding(5, 0);
+
+      picture {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        img {
+          .unitize-height(60);
+          width: auto;
+        }
+      }
+
+    }
+    .logo--shop {
+      width: 100%;
+    }
+
+    &.is--left {
+      .logo--shop {
+        text-align: left;
+      }
+    }
+    &.is--center {
+      .logo--shop {
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+
+
+
+}

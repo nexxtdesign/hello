@@ -1,0 +1,355 @@
+.top-bar--usp {
+  display: none;
+}
+
+.header-main {
+  border: 0 none;
+  margin: 0 auto;
+
+  .logo-main {
+    .unitize-padding(10, 10);
+
+    .logo--link {
+      .unitize-height(40);
+      .unitize-padding(5, 0);
+
+      picture {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        img {
+          .unitize-height(40);
+          width: auto;
+        }
+      }
+
+    }
+    .logo--shop {
+      width: 100%;
+    }
+
+    &.is--left {
+      .logo--shop {
+        text-align: left;
+      }
+    }
+    &.is--center {
+      .logo--shop {
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+.shop--navigation {
+  .account--dropdown-navigation {
+    font-family: @font-base-stack;
+  }
+  .navigation--entry {
+    margin: 0;
+    //z-index: 10;
+
+    >.btn {
+      .unitize-height(40);
+      .unitize(line-height, 34);
+      border: 0 none;
+      background: transparent;
+    }
+    .icon--heart {
+      .unitize(font-size, 21);
+    }
+  }
+  .entry--menu-left {
+    .icon--menu {
+      .unitize(font-size, 21);
+      display: inline;
+      vertical-align: middle;
+    }
+
+    >.btn {
+      font-weight: @font-base-weight;
+      .unitize(padding-left, 10);
+      .unitize-width(40);
+    }
+  }
+}
+
+.navigation--list {
+  .entry--account {
+    .account--link {
+      .unitize-padding(2, 10, 2, 10);
+      .unitize-width(40);
+    }
+    .icon--account {
+      position: relative;
+      left: 0;
+      top: 0;
+      display: inline;
+    }
+  }
+}
+
+// Small Checkout & Registration Header
+.is--ctl-checkout.is--minimal-header,
+.is--ctl-register.is--minimal-header,
+.is--ctl-register.is--minimal-header.is--target-checkout {
+
+  .header-main {
+    .box-shadow(none);
+    border: 0 none;
+
+    .logo--shop {
+      width: 100%;
+    }
+
+    .btn--back-top-shop {
+      display: none;
+    }
+
+  }
+}
+
+
+// Phone Landscape
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+  .entry--search {
+    .main-search--form {
+      .main-search--field:focus {
+        background: @gray-light;
+      }
+    }
+  }
+}
+
+// Tablet
+@media screen and (min-width: @tabletViewportWidth) {
+  .top-bar--usp {
+    display: block;
+    width: 100%;
+    max-width: 80%;
+    .usp--inner {
+      list-style: none;
+    }
+    .usp--item {
+      float: left;
+      .unitize(line-height, 26);
+      width: 25%;
+      text-align: center;
+
+      &:first-of-type {
+        text-align: left;
+      }
+
+      &:last-of-type {
+        text-align: right;
+      }
+
+      span {
+        .unitize(font-size, 13);
+      }
+      .icon {
+        .unitize(font-size, 10);
+      }
+    }
+  }
+  .header-main {
+    padding: 0;
+
+    .top-bar {
+      .unitize-padding(0, 20);
+      margin: 0;
+      border-bottom: 1px solid @border-color;
+      background: @topbar-background;
+      color: @topbar-color;
+    }
+    .header--navigation {
+      .unitize-padding(20,20);
+    }
+
+    .logo-main {
+      padding: 0;
+      position: absolute;
+      z-index: 20;
+
+      &.is--center {
+        left: 50%;
+        .transform(translateX(-50%));
+        text-align: center;
+      }
+
+    }
+    .shop--navigation {
+      width: 100%;
+    }
+
+    .top-bar--navigation {
+      .navigation--entry, .navigation--link {
+        color: @topbar-color;
+
+        &:hover, &:focus {
+          color: @topbar-color;
+        }
+      }
+      .select-field {
+        &:hover, &:focus {
+          color: @topbar-color;
+        }
+        color: @topbar-color;
+
+        select {
+          &:hover, &:focus {
+            color: @topbar-color;
+          }
+        }
+      }
+    }
+
+  }
+  .shop--navigation {
+    .navigation--entry {
+      .border-radius(0);
+    }
+    .entry--search {
+      .unitize(left, 20);
+      width: 20%;
+      margin-right: 0;
+      left: 40%;
+      &.is--logo-center {
+        .unitize(left, 0);
+      }
+    }
+    .navigation--list {
+      .entry--cart {
+        .cart--link {
+          .cart--amount {
+            color: @brand-secondary;
+            font-weight: normal;
+            .unitize-padding(0, 0, 0, 8);
+          }
+        }
+      }
+    }
+  }
+
+  // Small Checkout & Registration Header
+  .is--ctl-checkout.is--minimal-header,
+  .is--ctl-register.is--minimal-header,
+  .is--ctl-register.is--minimal-header.is--target-checkout {
+
+    .header-main {
+      .box-shadow(none);
+
+      .logo--shop {
+        width: 100%;
+      }
+
+      .logo--link { width: auto }
+      .logo-main {
+        margin: 0;
+        left: 0;
+        position: relative;
+        padding: 0;
+      }
+    }
+  }
+
+}
+
+// Tablet
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+  .header-main {
+    padding: 0;
+
+    .logo-main {
+      padding: 0;
+      position: absolute;
+      z-index: 20;
+      .unitize(left, 20);
+
+      .logo--shop {
+        width: 100%;
+      }
+
+      &.is--center {
+        left: 50% !important;
+        .transform(translateX(-50%)) !important;
+        text-align: center !important;
+      }
+
+    }
+    .shop--navigation {
+      width: 100%;
+    }
+  }
+  .shop--navigation {
+    .entry--search {
+      width: 20%;
+      margin-right: 0;
+      left: 40%;
+
+      &.is--logo-center {
+        .unitize(left, 0);
+      }
+    }
+    .navigation--list {
+      .entry--cart {
+        .cart--link {
+          .unitize-padding(2, 10, 2, 6);
+          .cart--amount {
+            color: @brand-secondary;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+  .navigation--list {
+    .entry--cart {
+      .icon--basket {
+        left: 0; top: 0;
+        display: inline;
+        position: relative;
+      }
+    }
+  }
+
+  // Small Checkout & Registration Header
+  .is--ctl-checkout.is--minimal-header,
+  .is--ctl-register.is--minimal-header,
+  .is--ctl-register.is--minimal-header.is--target-checkout {
+
+    .header-main {
+      .box-shadow(none);
+
+      .logo--shop {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        .unitize(margin-top, 30);
+        float: unset;
+      }
+    }
+  }
+
+}
+
+// Desktop
+@media screen and (min-width: @desktopViewportWidth) {
+  .header-main {
+    padding: 0;
+    .header--navigation {
+      .unitize-padding(20,0);
+    }
+    .logo-main {
+      left: 0;
+    }
+
+  }
+  .shop--navigation {
+    .entry--search {
+      width: 20%;
+    }
+  }
+}

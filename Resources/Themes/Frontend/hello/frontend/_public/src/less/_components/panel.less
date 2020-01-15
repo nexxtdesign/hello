@@ -1,0 +1,85 @@
+.panel {
+    &.has--shadow {
+        .box-shadow(0);
+    }
+
+    &.has--border {
+      border: 1px solid @border-color;
+      background: transparent;
+    }
+}
+
+.panel--header {
+    background: transparent;
+    font-weight: @font-bold-weight;
+    font-family: @custom-theme-font-headline;
+    color: @panel-header-color;
+    border: 0 none;
+
+    &.secondary {
+        color: @text-color;
+        background: #fff;
+    }
+
+    &.primary {
+        color: @brand-primary;
+        background: #fff;
+    }
+}
+
+.panel--title {
+    display: block;
+    font-weight: @font-bold-weight;
+    font-family: @custom-theme-font-headline;
+    color: @panel-header-color;
+    .unitize-padding(20, 0);
+
+    &.is--underline {
+        .unitize-padding(20, 0);
+        border: 0 none;
+    }
+}
+
+.panel--actions {
+  &.has--border {
+    border: 0 none;
+  }
+}
+
+.panel--paging {
+
+  .paging--link {
+    border: 0;
+    background: transparent;
+
+    &.is--active, &.is--active:hover {
+      background: transparent;
+      color: @brand-primary;
+    }
+  }
+}
+
+.panel--body {
+  .unitize-padding(10, 10);
+  .unitize(font-size, 14);
+  .unitize(line-height, 24);
+  display: block;
+  position: relative;
+
+  &.has--border {
+    border: 0 none;
+  }
+
+  &.is--slim {
+    .unitize-padding(5, 0);
+  }
+
+  &.is--flat {
+    background: transparent;
+  }
+
+  &.is--embossed {
+    .box-shadow(none);
+    background: transparent;
+  }
+}

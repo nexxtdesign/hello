@@ -1,0 +1,23 @@
+.product-slider--arrow {
+  border: 0 none;
+  .unitize(font-size, 24);
+
+  &:hover {
+    color: @btn-default-hover-text-color;
+    border: 0 none;
+    background: transparent;
+  }
+
+  &.arrow--next {
+    .border-radius(0);
+    &::before, &:before {
+      content: @sw-icon-arrow-right;
+    }
+  }
+  &.arrow--prev {
+    .border-radius(0);
+    &::before, &:before {
+      content: @sw-icon-arrow-left;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.navigation-main {
+  background: transparent;
+  .unitize-padding(0, 10);
+  margin: 0;
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+  .navigation-main {
+    margin: 0 auto;
+    font-family: @custom-theme-font-navigation;
+    border-bottom: 1px solid @border-color;
+    .unitize(font-size, @font-size-base);
+    background: #fff;
+
+    .navigation--list {
+      text-align: center;
+    }
+
+    .navigation--link {
+      .unitize(font-size, @font-size-base);
+      .transition(none 0);
+      .unitize-padding(15, 20);
+      .border-radius(0);
+      display: block;
+      color: @text-color-dark;
+      position: relative;
+
+      span {
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 0;
+          .unitize-height(2);
+          .unitize(bottom, -3);
+          left: 0;
+          background: @brand-primary;
+          .transition(all ease-in-out .24s);
+        }
+      }
+      &:hover {
+        color: @text-color-dark;
+
+        span {
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .is--active .navigation--link {
+      background: transparent;
+      font-weight: @font-base-weight;
+      color: @brand-primary;
+
+      &:hover { color: @text-color-dark; }
+    }
+  }
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+  .navigation-main {
+    .unitize-padding(0, 50);
+    .unitize(margin-bottom, 0);
+  }
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+  .navigation-main {
+    .unitize-padding(0, 0);
+    .unitize(margin-bottom, 0);
+  }
+}

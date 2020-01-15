@@ -1,0 +1,46 @@
+textarea,
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+  font-weight: normal;
+  border: 0;
+  border-bottom: 1px solid @border-color;
+  background: @gray-light;
+  .border-radius(0);
+  .box-shadow(none);
+  .unitize-padding(10, 12, 9, 12);
+
+  &:focus {
+    background: @gray-light;
+    border-bottom: 1px solid @border-color;
+  }
+
+  &.has--error {
+    .unitize(padding-left, 10);
+  }
+}
+
+.select-field,
+.js--fancy-select {
+  select {
+    .border-radius(0);
+    border: 0;
+    border-bottom: 1px solid @border-color;
+    background: @gray-light;
+
+    &:hover, &:focus {
+      border-color: @border-color;
+      color: @text-color;
+      background: @gray-light;
+    }
+  }
+
+  &:after {
+    border: 0 none;
+    .unitize(font-size, 6);
+  }
+
+}
