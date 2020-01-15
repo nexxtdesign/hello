@@ -21,20 +21,18 @@
 
 
 
-
-
 {* Footer *}
 {block name="frontend_index_footer"}
 
-{* Footer *}
-{block name="frontend_index_pre_footer"}
-prefooter
-{* back to top *}
-{block name="frontend_index_backtop_footer"}
-{include file='frontend/index/backtop.tpl'}
-{/block}
+    {* Footer *}
+    {block name="frontend_index_pre_footer"}
 
-{/block}
+        {* back to top *}
+        {block name="frontend_index_backtop_footer"}
+        {include file='frontend/index/backtop.tpl'}
+        {/block}
+
+    {/block}
 
 
     {block name='frontend_index_newsletter'}
