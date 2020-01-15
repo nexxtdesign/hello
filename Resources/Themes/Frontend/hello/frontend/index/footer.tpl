@@ -1,5 +1,11 @@
 {extends file="parent:frontend/index/footer.tpl"}
 
+{* back to top *}
+{block name="frontend_index_backtop_footer"}
+{include file='frontend/index/backtop.tpl'}
+{/block}
+
+
 {* Footer menu *}
 {block name='frontend_index_footer_menu' prepend}
     {if $theme.social_settings_show}
@@ -40,10 +46,4 @@
 
 {* Copyright in the footer *}
 {block name='frontend_index_footer_copyright'}
-{/block}
-
-
-{* back to top *}
-{block name="frontend_index_backtop_footer"}
-{include file='frontend/index/backtop.tpl'}
 {/block}
