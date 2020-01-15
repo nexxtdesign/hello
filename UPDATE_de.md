@@ -9,3 +9,7 @@ v1.0.1
 v1.0.2
 ----------
 - Account Off Canvas overlay fix
+
+v1.0.3
+----------
+- added back to top link
