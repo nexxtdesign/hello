@@ -8,6 +8,10 @@
 
 {* Footer menu *}
 {block name='frontend_index_footer_menu' prepend}
+
+-----
+
+
     {if $theme.social_settings_show}
         <div class="footer--social">
             <ul class="social--inner">
