@@ -1,5 +1,5 @@
 {extends file="parent:frontend/index/footer.tpl"}
-
+----
 {* back to top *}
 {block name="frontend_index_backtop_footer"}
 {include file='frontend/index/backtop.tpl'}
