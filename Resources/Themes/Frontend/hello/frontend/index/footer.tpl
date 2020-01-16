@@ -4,6 +4,10 @@
 {block name='frontend_index_footer_menu' prepend}
 
 
+{* back to top *}
+{block name="frontend_index_backtop_footer"}{include file='frontend/index/backtop.tpl'}
+{/block}
+
 
     {if $theme.social_settings_show}
         <div class="footer--social">
@@ -48,6 +52,3 @@
 
 
 
-{* back to top *}
-{block name="frontend_index_backtop_footer"}{include file='frontend/index/backtop.tpl'}
-{/block}
