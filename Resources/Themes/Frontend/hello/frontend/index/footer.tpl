@@ -4,11 +4,6 @@
 {block name='frontend_index_footer_menu' prepend}
 
 
-{* back to top *}
-{block name="frontend_index_backtop_footer"}{include file='frontend/index/backtop.tpl'}
-{/block}
-
-
     {if $theme.social_settings_show}
         <div class="footer--social">
             <ul class="social--inner">
@@ -43,6 +38,16 @@
             </ul>
         </div>
     {/if}
+
+
+
+{* back to top *}
+{block name="frontend_index_backtop_footer"}
+{include file='frontend/index/backtop.tpl'}
+{/block}
+
+
+
 {/block}
 
 {* Copyright in the footer *}
