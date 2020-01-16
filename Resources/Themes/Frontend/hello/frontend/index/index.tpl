@@ -24,6 +24,12 @@
 {* Footer *}
 {block name="frontend_index_footer"}
 
+{block name='frontend_index_prefooter'}
+<div>col1</div>
+{/block}
+
+
+
     {block name='frontend_index_newsletter'}
         {if $theme.show_newsletter_box}
             {include file='frontend/index/main-newsletter.tpl'}
