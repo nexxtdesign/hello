@@ -1,6 +1,6 @@
 <div class="container">
  {if $theme.usp_settings_show}
-        <div class="top-bar--usp left">
+        <div class="bottom-bar--usp center">
             <ul class="usp--inner">
                 {if $theme.custom_theme_usp_1}
                     <li class="usp--item">
