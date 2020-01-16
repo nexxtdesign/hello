@@ -44,3 +44,10 @@
 {* Copyright in the footer *}
 {block name='frontend_index_footer_copyright'}
 {/block}
+
+
+
+
+{* back to top *}
+{block name="frontend_index_backtop_footer"}{include file='frontend/index/backtop.tpl'}
+{/block}

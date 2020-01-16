@@ -24,17 +24,6 @@
 {* Footer *}
 {block name="frontend_index_footer"}
 
-    {* Footer *}
-    {block name="frontend_index_pre_footer"}
-
-        {* back to top *}
-        {block name="frontend_index_backtop_footer"}
-        {include file='frontend/index/backtop.tpl'}
-        {/block}
-
-    {/block}
-
-
     {block name='frontend_index_newsletter'}
         {if $theme.show_newsletter_box}
             {include file='frontend/index/main-newsletter.tpl'}
