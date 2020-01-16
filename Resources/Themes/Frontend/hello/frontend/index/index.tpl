@@ -25,7 +25,7 @@
 {block name="frontend_index_footer"}
 
 {block name='frontend_index_prefooter'}
-<div>col1</div>
+{include file='frontend/index/prefooter.tpl'}
 {/block}
 
 
