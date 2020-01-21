@@ -908,7 +908,7 @@ class Theme extends \Shopware\Components\Theme
         $fieldset->addElement(
             $this->createCheckboxField(
                 'show_backtop',
-                'backtop',
+                'Back to Top',
                 true,
                 [
                     'attributes' =>
