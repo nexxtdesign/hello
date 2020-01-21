@@ -972,6 +972,26 @@ class Theme extends \Shopware\Components\Theme
                 ]
             )
         );
+        
+        // SHOW USPs in Footer
+        $fieldset->addElement(
+            $this->createCheckboxField(
+                'usp_settings_show_footer',
+                '__usp_settings_show_footer__',
+                true,
+                [
+                    'attributes' =>
+                        [
+                            'lessCompatible' => false,
+                            'columnWidth' => 1
+                        ]
+                ]
+            )
+        );
+
+
+
+
         $fieldset->addElement(
             $this->createCheckboxField(
                 'usp_settings_show_cart',

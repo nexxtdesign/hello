@@ -1,3 +1,7 @@
+ {** Check if USP is active for Footer **}
+ {if $theme.usp_settings_showfooter}
+ }
+
 <div class="container">
  {if $theme.usp_settings_show}
         <div class="bottom-bar--usp center">
@@ -26,3 +30,5 @@
         </div>
     {/if}
 </div>
+
+{/if}
