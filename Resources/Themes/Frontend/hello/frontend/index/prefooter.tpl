@@ -1,6 +1,6 @@
  {** Check if USP is active for Footer **}
- {if $theme.usp_settings_showfooter}
- }
+ {if $theme.usp_settings_show_footer}
+ 
 
 <div class="container">
  {if $theme.usp_settings_show}

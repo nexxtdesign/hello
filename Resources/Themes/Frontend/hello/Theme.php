@@ -582,6 +582,7 @@ class Theme extends \Shopware\Components\Theme
         $tab->addElement($this->themeSocialSettingsFieldset());
         $tab->addElement($this->themeShippingSettingsFieldset());
         $tab->addElement($this->themePaymentSettingsFieldset());
+        $tab->addElement($this->themeFunctionSettingsFieldset());
 
         return $tab;
     }
@@ -773,6 +774,7 @@ class Theme extends \Shopware\Components\Theme
 
         return $fieldset;
     }
+    // themePaymentSettingsFieldset
     public function themePaymentSettingsFieldset()
     {
         $fieldset = $this->createFieldSet(
@@ -879,6 +881,58 @@ class Theme extends \Shopware\Components\Theme
 
         return $fieldset;
     }
+
+
+
+
+ // themeFunctionSettingsFieldset
+    public function themeFunctionSettingsFieldset()
+    {
+        $fieldset = $this->createFieldSet(
+            'function_settings',
+            '__function_settings__',
+            array(
+                'attributes' => array(
+                    'layout' => 'column',
+                    'flex' => 0,
+                    'autoScroll' => true,
+                    'defaults' => array(
+                        'columnWidth' => 1,
+                        'labelWidth' => 200,
+                        'margin' => '2 15 2 0'
+                    )
+                )
+            )
+        );
+
+        $fieldset->addElement(
+            $this->createCheckboxField(
+                'show_backtop',
+                'backtop',
+                true,
+                [
+                    'attributes' =>
+                        [
+                            'lessCompatible' => false,
+                            'columnWidth' => 1
+                        ]
+                ]
+            )
+        );
+
+
+        return $fieldset;
+    }
+
+
+
+
+
+
+
+
+
+
 
     //USP Leiste Tab
     public function themeUspSettings()
