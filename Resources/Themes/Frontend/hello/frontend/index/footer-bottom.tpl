@@ -15,7 +15,7 @@
         </div>
         
         <div class="footer--copyright">
-            {s name="IndexThemeBy"}Theme by <a href="https://store.shopware.com/danv.in.html" target="_parent" title="Theme by danv.in">danv.in</a>{/s}
+            {s name="IndexThemeBy"}Theme by <a href="https://store.nexxtdesign.de" target="_parent" title="Theme by nexxtdesign.de">nexxtdesign.de</a>{/s}
         </div>
 
     {/block}
